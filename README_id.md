@@ -23,7 +23,7 @@ Aplikasi ini juga telah disertai contoh kode.
 ## Screenshot
 
 <p align="center">
-	<img src="./.md_asset/ss-1.png" />
+	<img src="./.md_asset/ss_2024.07.09-0447.png" />
 </p>
 
 ## Link untuk Traktir
