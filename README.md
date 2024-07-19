@@ -27,3 +27,7 @@ The application also includes example browsing code.
 <p align="center">
 	<img src="./.md_asset/ss_2024.07.09-0447.png" />
 </p>
+
+## Link untuk Traktir
+
+- https://karyakarsa.com/rakifsul/info
