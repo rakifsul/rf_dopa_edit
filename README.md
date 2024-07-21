@@ -10,6 +10,10 @@ This application is a programmable web browser.
 
 Download this app on "Releases" page.
 
+## Where are the Source Codes
+
+Source codes are included in the zip along with the executables.
+
 ## How to Use
 
 The application consists of two panels, each with its own function.

@@ -8,6 +8,10 @@ Aplikasi ini adalah web browser yang dapat diprogram.
 
 Download executable-nya di halaman "Releases".
 
+## Di Mana Source Code-nya
+
+Source code ada di dalam paket zip bersama executable-nya.
+
 ## Cara Penggunaan
 
 Aplikasi ini terdiri dari dua panel yang masing-masing memiliki fungsinya sendiri.
