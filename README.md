@@ -12,7 +12,7 @@ Download this app on "Releases" page.
 
 ## Where are the Source Codes
 
-Source codes are included in the zip along with the executables.
+Source codes are included on the "Releases" page.
 
 ## How to Use
 

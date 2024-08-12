@@ -10,7 +10,7 @@ Download executable-nya di halaman "Releases".
 
 ## Di Mana Source Code-nya
 
-Source code ada di dalam paket zip bersama executable-nya.
+Source code ada di halaman "Releases".
 
 ## Cara Penggunaan
 
