@@ -1,0 +1,14 @@
+{
+    "t-gui-tutorial": {
+        "title": "GUI Tutorial"
+    },
+    "t-gui-tutorial-id": {
+        "title": "GUI Tutorial (ID)"
+    },
+    "t-api-tutorial": {
+        "title": "API Tutorial"
+    },
+    "t-api-tutorial-id": {
+        "title": "API Tutorial (ID)"
+    }
+}

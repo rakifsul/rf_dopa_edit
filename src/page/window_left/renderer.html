@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RF Dopa Edit</title>
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" data-name="vs/editor/editor.main" href="../../../node_modules/monaco-editor/min/vs/editor/editor.main.css" />
+  <link href="renderer.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- BEGIN MAIN BODY-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav nav-tabs" id="my-tab-header" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="navigation-tab" data-bs-toggle="tab" href="#navigation" role="tab" aria-controls="navigation" aria-selected="false">Navigation</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="settings-tab" data-bs-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="my-tab-content">
+          <div class="tab-pane fade show active" id="navigation" role="tabpanel" aria-labelledby="navigation-tab">
+            <div class="input-group mt-3">
+              <button class="input-group-text btn btn-outline-danger" title="Backward" id="btn-back">BW</button>
+              <button class="input-group-text btn btn-outline-danger" title="Forward" id="btn-forward">FW</button>
+              <button class="input-group-text btn btn-outline-danger" title="Home" id="btn-home">HM</button>
+              <input type="text" class="form-control" placeholder="Enter URL Here" aria-label="Enter URL Here" aria-describedby="button-input-url" id="tx-input-url">
+              <button class="btn btn-outline-danger" type="button" title="Go!" id="btn-input-url">GO</button>
+              <button class="btn btn-outline-danger" type="button" title="DevTools Right" id="btn-open-devtools">DTR</button>
+            </div>
+            <div class="btn-group mt-3" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary" title="New Script" id="btn-script-new">NE</button>
+              <button type="button" class="btn btn-primary" title="Save Script" id="btn-script-save">SV</button>
+              <button type="button" class="btn btn-primary" title="Rename Script" id="btn-script-rename">RN</button>
+              <button type="button" class="btn btn-primary" title="Delete Script" id="btn-script-delete">DL</button>
+              <button type="button" class="btn btn-primary" title="Export All Scripts" id="btn-script-export">EX</button>
+              <button type="button" class="btn btn-primary" title="Import Scripts" id="btn-script-import">IM</button>
+
+            </div>
+
+            <div class="btn-group mt-3" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-danger" title="Run Asynchronously" id="btn-script-run-async">RA</button>
+              <button type="button" class="btn btn-danger" title="Stop Script Forcefully" id="btn-script-stop">FS</button>
+            </div>
+            <hr>
+
+            <div class="d-flex align-items-start" id="all-tabs">
+              <div class="nav nav-pills flex-column" id="tab-header-script-list" role="tablist" aria-orientation="vertical">
+                <!-- <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</button>-->
+              </div>
+
+              <div class="tab-content" id="tab-content-script-list">
+                <!-- 
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <div id="code-editor"></div>
+                </div>
+                -->
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+            <div class="mb-3 mt-3">
+              <input type="email" class="form-control" id="tx-home-page" placeholder="Choose your home page...">
+            </div>
+            <hr>
+            <div class="mb-3">
+              <input type="email" class="form-control" id="tx-user-agent" placeholder="Custom User Agent">
+            </div>
+            <!-- <hr>
+            <div class="mb-3">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="chk-show-devtools-on-run">
+                <label class="form-check-label" for="chk-show-devtools-on-run">
+                  Show DevTools on Run
+                </label>
+              </div>
+            </div> -->
+            <hr>
+            <select id="select-ui-theme" class="form-select" aria-label="Default select example">
+              <option value="light" selected>BS Light</option>
+              <option value="dark">BS Dark</option>
+            </select>
+            <hr>
+            <select id="select-editor-theme" class="form-select" aria-label="Default select example">
+              <option value="vs-light" selected>VS Light</option>
+              <option value="vs-dark">VS Dark</option>
+            </select>
+            <hr>
+            <div class="btn-group mt-3" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-primary" id="btn-settings-save">Save</button>
+              <button type="button" class="btn btn-primary" id="btn-settings-reset">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- END MAIN BODY-->
+
+  <!-- BEGIN JS-->
+  <script src="../vendor/jquery/jquery.min.js"></script>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var require = {
+      paths: {
+        vs: '../../../node_modules/monaco-editor/min/vs'
+      }
+    };
+  </script>
+  <script src="../../../node_modules/monaco-editor/min/vs/loader.js"></script>
+  <script src="../../../node_modules/monaco-editor/min/vs/editor/editor.main.nls.js"></script>
+  <script src="../../../node_modules/monaco-editor/min/vs/editor/editor.main.js"></script>
+  <script src="renderer.js"></script>
+  <!-- END JS-->
+</body>
+
+</html>

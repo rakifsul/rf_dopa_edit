@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RF Dopa Edit - Home</title>
+  <link href="dopa://../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .background {
+      background-image: url('dopa://../../image/bootstrap-icons/hypnotize.svg');
+      background-position: left center;
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+  </style>
+</head>
+
+<body class="background">
+  <div class="container mt-5">
+    <div class="mt-4 p-5 bg-light text-dark rounded">
+      <h1>RF Dopa Edit - Version Info</h1>
+      <hr>
+      <p id="node-version"></p>
+      <p id="chrome-version"></p>
+      <p id="electron-version"></p>
+      <hr>
+      <p>Please hover over the button menu (BW, FW, HM, NE, etc) too see more info about its use.</p>
+      <a class="btn btn-primary" href="dopa://doc/index.html">Read Documentation</a>
+    </div>
+  </div>
+
+  <script src="dopa://../../vendor/jquery/jquery.min.js"></script>
+  <script src="dopa://../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      const nodeVersion = preload.nodeVersion();
+      const chromeVersion = preload.chromeVersion();
+      const electronVersion = preload.electronVersion();
+
+      $("#node-version").text("Node Version: " + nodeVersion.toString())
+      $("#chrome-version").text("Chrome Version: " + chromeVersion.toString())
+      $("#electron-version").text("Electron Version: " + electronVersion.toString())
+
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RF Dopa Edit - Error</title>
+  <link href="dopa://../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .background {
+      background-image: url('dopa://../../image/bootstrap-icons/hypnotize.svg');
+      background-position: left center;
+      background-repeat: repeat;
+      background-size: 200px 200px;
+    }
+  </style>
+</head>
+
+<body class="background">
+  <div class="container mt-5">
+    <div class="mt-4 p-5 bg-light text-dark rounded">
+      <h1>Error Happened!</h1>
+      <hr>
+      <p id="error-code"></p>
+      <p id="error-text"></p>
+    </div>
+  </div>
+
+  <script src="dopa://../../vendor/jquery/jquery.min.js"></script>
+  <script src="dopa://../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const errorCode = urlParams.get('error-code');
+      const errorText = urlParams.get('error-text');
+
+      $("#error-code").text(errorCode.toString())
+      $("#error-text").text(errorText.toString())
+    })
+  </script>
+</body>
+
+</html>

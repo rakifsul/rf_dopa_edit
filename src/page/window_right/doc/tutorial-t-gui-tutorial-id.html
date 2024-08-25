@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Tutorial: GUI Tutorial (ID)</title>
+
+    <script src="dopa://doc/scripts/prettify/prettify.js"> </script>
+    <script src="dopa://doc/scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="dopa://doc/styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="dopa://doc/styles/jsdoc-default.css">
+</head>
+
+<body class="background">
+
+<div id="main">
+
+    <h1 class="page-title">Tutorial: GUI Tutorial (ID)</h1>
+
+    <section>
+
+<header>
+    
+
+    <h2>GUI Tutorial (ID)</h2>
+</header>
+
+<article>
+    <h2>Pendahuluan</h2>
+<p>Menggunakan RF Dopa Edit sebenarnya tidak terlalu sulit.</p>
+<p>Yang penting, Anda paham arti dari singkatan-singkatan yang ada pada menunya dan mampu memahami contoh kode yang diberikan.</p>
+<p>Namun sebelumnya, kita akan mulai dulu dari 2 panel (kiri dan kanan) yang ada pada window utama.</p>
+<p><img src="./static/ss-0.png" alt="Window Utama"></p>
+<h2>Panel Kiri</h2>
+<p>Panel kiri RF Dopa Edit adalah panel yang digunakan untuk navigasi dan konfigurasi.</p>
+<p>Panel ini terdiri dari dua tab horizontal:</p>
+<ul>
+<li>Navigation</li>
+<li>Settings</li>
+</ul>
+<p>Tab &quot;Navigation&quot; digunakan untuk melakukan navigasi, baik melalui GUI maupun API.</p>
+<h3>Navigasi dengan GUI</h3>
+<p>Untuk melakukan navigasi dengan GUI, gunakan tombol BW, FW, HM, dan GO pada kiri dan kanan kotak input URL.</p>
+<p>Apa arti dari singkatan tadi?</p>
+<ul>
+<li>BW = Go Backward</li>
+<li>FW = Go Forward</li>
+<li>HM = Go Home</li>
+<li>GO = Go to URL provided in input box.</li>
+</ul>
+<h3>Navigasi dengan API</h3>
+<p>Untuk melakukan navigasi dengan API, Anda bisa membuat tab code editor baru dengan mengklik tombol NE pada menu.</p>
+<p>Selanjutnya, akan muncul code editor yang bisa Anda beri nama sendiri melalui popup yang disediakan.</p>
+<p>Code editor itu akan diisi kode yang menggunakan rfx API dari aplikasi ini untuk melakukan berbagai tugas seputar navigasi web.</p>
+<p>Detail dari rfx API akan diberikan pada tutorial API yang bisa Anda klik di menu dokumentasi ini.</p>
+<h3>Settings</h3>
+<p>Tab &quot;Settings&quot; berisi konfigurasi aplikasi RF Dopa Edit yang bisa Anda ubah:</p>
+<ul>
+<li>Home page</li>
+<li>Useragent</li>
+<li>Window Theme: BS Light atau BS Dark. BS adalah singkatan dari Bootstrap, CSS library yang digunakan dalam aplikasi ini.</li>
+<li>Editor Theme: VS Light atau VS Dark. Ini adalah theme dari monaco editor yang digunakan dalam aplikasi ini.</li>
+<li>Save. Untuk menyimpan konfigurasi.</li>
+<li>Reset. Untuk me-reset konfigurasi.</li>
+</ul>
+<h3>Menu-Menu Lainnya</h3>
+<p>Beberapa menu telah dibahas tadi, sekarang inilah sisanya:</p>
+<ul>
+<li>DTR - DevTools Right. Untuk membuka devtools di panel kanan.</li>
+<li>SV - Save Scripts. Untuk menyimpan seluruh script yang ada di code editor tab.</li>
+<li>RN - Rename Script. Untuk me-rename nama script yang telah dibuat.</li>
+<li>DL - Delete Script. Untuk menghapus script yang telah dibuat.</li>
+<li>EX - Export Scripts. Untuk meng-export semua script yang ada di tab ke file berformat JSON.</li>
+<li>IM - Import Scripts. Untuk meng-import semua script yang telah di-export dengan EX tadi.</li>
+<li>RA - Run Asynchronous. Untuk menjalankan script di dalam sebuah wrapper yang asynchronous. Jadi, Anda bisa langsung menggunakan <code>await</code> pada code editor.</li>
+<li>FS - Force Stop. Untuk menghentikan script secara paksa. Sangat berguna jika Anda memasukkan infinite loop pada script di code editor.</li>
+</ul>
+<h2>Panel Kanan</h2>
+<p>Panel kanan adalah preview dari apa yang Anda lakukan di panel kiri.</p>
+<p>Sebagai contoh, Anda bisa membuka URL tertentu pada URL input, kemudian menekan tombol GO.</p>
+<p>Dengan demikian, di panel kanan, jika alamat URL tersebut benar, maka halaman yang dituju akan terbuka.</p>
+<p>Jika terjadi error, maka RF Dopa Edit akan menampilkan halaman error di panel kanan.</p>
+<p>Selain itu, panel kanan juga merupakan preview dari apa yang Anda lakukan pada code editor di panel kiri.</p>
+<p>Sebagai contoh, Anda bisa menjalankan:</p>
+<pre class="prettyprint source"><code>rfx.goTo(&quot;https://duckduckgo.com&quot;);
+</code></pre>
+<p>Di code editor.</p>
+<p>Dengan melakukan run script pada kode tersebut, halaman duckduckgo akan terbuka di panel kanan.</p>
+</article>
+
+</section>
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="rfx.html">rfx</a></li><li><a href="rfxw.html">rfxw</a></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-t-api-tutorial-id.html">API Tutorial (ID)</a></li><li><a href="tutorial-t-api-tutorial.html">API Tutorial</a></li><li><a href="tutorial-t-gui-tutorial-id.html">GUI Tutorial (ID)</a></li><li><a href="tutorial-t-gui-tutorial.html">GUI Tutorial</a></li></ul><h3>Global</h3><ul><li><a href="global.html#rfxAPI">rfxAPI</a></li><li><a href="global.html#rfxwAPI">rfxwAPI</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.3</a> on Tue Jul 09 2024 04:45:11 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="dopa://doc/scripts/linenumber.js"> </script>
+</body>
+</html>

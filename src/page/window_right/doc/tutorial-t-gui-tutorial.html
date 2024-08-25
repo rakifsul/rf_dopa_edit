@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Tutorial: GUI Tutorial</title>
+
+    <script src="dopa://doc/scripts/prettify/prettify.js"> </script>
+    <script src="dopa://doc/scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="dopa://doc/styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="dopa://doc/styles/jsdoc-default.css">
+</head>
+
+<body class="background">
+
+<div id="main">
+
+    <h1 class="page-title">Tutorial: GUI Tutorial</h1>
+
+    <section>
+
+<header>
+    
+
+    <h2>GUI Tutorial</h2>
+</header>
+
+<article>
+    <h2>Introduction</h2>
+<p>Using RF Dopa Edit is actually not too difficult.</p>
+<p>The important thing is to understand the meanings of the abbreviations in its menu and be able to comprehend the example codes provided.</p>
+<p>But first, let's start with the two panels (left and right) in the main window.</p>
+<p><img src="./static/ss-0.png" alt="Main Window"></p>
+<h2>Left Panel</h2>
+<p>The left panel of RF Dopa Edit is used for navigation and configuration.</p>
+<p>This panel consists of two horizontal tabs:</p>
+<ul>
+<li>Navigation</li>
+<li>Settings</li>
+</ul>
+<p>The &quot;Navigation&quot; tab is used for navigation, both through the GUI and API.</p>
+<h3>Navigation with GUI</h3>
+<p>To navigate using the GUI, use the BW, FW, HM, and GO buttons to the left and right of the URL input box.</p>
+<p>What do these abbreviations mean?</p>
+<ul>
+<li>BW = Go Backward</li>
+<li>FW = Go Forward</li>
+<li>HM = Go Home</li>
+<li>GO = Go to URL provided in input box.</li>
+</ul>
+<h3>Navigation with API</h3>
+<p>To navigate using the API, you can create a new code editor tab by clicking the NE button in the menu.</p>
+<p>Next, a code editor will appear where you can name it through the provided popup.</p>
+<p>This code editor will be filled with code that uses the rfx API of this application to perform various tasks related to web navigation.</p>
+<p>Details of the rfx API will be provided in the API tutorial accessible via this documentation menu.</p>
+<h3>Settings</h3>
+<p>The &quot;Settings&quot; tab contains configurations for the RF Dopa Edit application that you can modify:</p>
+<ul>
+<li>Home page</li>
+<li>Useragent</li>
+<li>Window Theme: BS Light or BS Dark. BS stands for Bootstrap, the CSS library used in this application.</li>
+<li>Editor Theme: VS Light or VS Dark. This is the theme of the Monaco editor used in this application.</li>
+<li>Save. To save the configuration.</li>
+<li>Reset. To reset the configuration.</li>
+</ul>
+<h3>Other Menus</h3>
+<p>Some menus have been discussed earlier, now here are the rest:</p>
+<ul>
+<li>DTR - DevTools Right. To open devtools in the right panel.</li>
+<li>SV - Save Scripts. Save all scripts in code editor tab.</li>
+<li>RN - Rename Script. To rename a script that has been created.</li>
+<li>DL - Delete Script. To delete a script that has been created.</li>
+<li>EX - Export Scripts. To export all scripts in the tab to a JSON formatted file.</li>
+<li>IM - Import Scripts. To import all scripts that have been exported using EX.</li>
+<li>RA - Run Asynchronous. To execute a script within an asynchronous wrapper. This allows you to use <code>await</code> directly in the code editor.</li>
+<li>FS - Force Stop. To forcibly stop a script. Useful if you have entered an infinite loop in a script in the code editor.</li>
+</ul>
+<h2>Right Panel</h2>
+<p>The right panel is a preview of what you are doing in the left panel.</p>
+<p>For example, you can open a specific URL in the URL input, then press the GO button.</p>
+<p>Thus, in the right panel, if the URL is correct, the targeted page will open.</p>
+<p>If an error occurs, RF Dopa Edit will display the error page in the right panel.</p>
+<p>Additionally, the right panel also serves as a preview of what you are doing in the code editor in the left panel.</p>
+<p>For example, you can execute:</p>
+<pre class="prettyprint source"><code>rfx.goTo(&quot;https://duckduckgo.com&quot;);
+</code></pre>
+<p>In the code editor.</p>
+<p>By running the script on that code, the duckduckgo page will open in the right panel.</p>
+</article>
+
+</section>
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="rfx.html">rfx</a></li><li><a href="rfxw.html">rfxw</a></li></ul><h3>Tutorials</h3><ul><li><a href="tutorial-t-api-tutorial-id.html">API Tutorial (ID)</a></li><li><a href="tutorial-t-api-tutorial.html">API Tutorial</a></li><li><a href="tutorial-t-gui-tutorial-id.html">GUI Tutorial (ID)</a></li><li><a href="tutorial-t-gui-tutorial.html">GUI Tutorial</a></li></ul><h3>Global</h3><ul><li><a href="global.html#rfxAPI">rfxAPI</a></li><li><a href="global.html#rfxwAPI">rfxwAPI</a></li></ul>
+</nav>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.3</a> on Tue Jul 09 2024 04:45:11 GMT+0700 (Indochina Time)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="dopa://doc/scripts/linenumber.js"> </script>
+</body>
+</html>

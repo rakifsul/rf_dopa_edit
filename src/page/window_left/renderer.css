@@ -1,0 +1,34 @@
+body {
+    overflow: hidden;
+}
+
+#all-tabs {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 185px;
+    bottom: 10px;
+}
+
+#tab-header-script-list {
+    position: relative;
+    width: 20%;
+
+    margin-right: 5px;
+}
+
+#tab-content-script-list {
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.code-editor-container {
+    position: relative;
+    height: 100%;
+}
+
+.code-editor-container > div {
+    position: relative;
+    height: 100%;
+}
