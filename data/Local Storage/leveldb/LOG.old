@@ -1,2 +1,3 @@
-2024/08/05-23:28:36.858 213c Creating DB D:\S-External-0\Project-Pribadi\RF-Dopa-Edit\rf_dopa_edit\data\Local Storage\leveldb since it was missing.
-2024/08/05-23:28:36.872 213c Reusing MANIFEST D:\S-External-0\Project-Pribadi\RF-Dopa-Edit\rf_dopa_edit\data\Local Storage\leveldb/MANIFEST-000001
+2024/10/02-05:02:26.923 c54 Reusing MANIFEST D:\Project\Project-Github\Free-Apps\rf_dopa_edit\data\Local Storage\leveldb/MANIFEST-000001
+2024/10/02-05:02:26.938 c54 Recovering log #3
+2024/10/02-05:02:26.939 c54 Reusing old log D:\Project\Project-Github\Free-Apps\rf_dopa_edit\data\Local Storage\leveldb/000003.log 
