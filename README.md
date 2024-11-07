@@ -3,8 +3,6 @@
 
 # rf_dopa_edit - Programmable Web Browser
 
-[README dengan Bahasa Indonesia Klik di Sini](https://github.com/rakifsul/rf_dopa_edit/blob/main/README_id.md)
-
 ## Intro
 
 This application is a programmable web browser.
